@@ -1,0 +1,6 @@
+Gandalf 150 Rivendell
+Aragorn 140 Rohan
+Legolas 120 Rivendell
+Gimli 160 Moria
+Frodo 100 Shire
+Sam 100 Shire

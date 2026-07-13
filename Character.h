@@ -2,15 +2,16 @@
 #define CHARACTER_H
 
 #include <string>
+
 using namespace std;
 
 class Character
 {
-protected:
+private:
     string name;
-    //Need to work on a text file system to select characters with stats, use the fellowship characters
     int health;
     string location;
+    int friendship;
 
 public:
     Character();
@@ -22,7 +23,13 @@ public:
     void setLocation(string l);
     string getLocation();
 
-    virtual void talk();
+    void setHealth(int h);
+    int getHealth();
+    int getFriendship();
+
+    void increaseFriendship(int amount);
+
+    void talk();
 };
 
 #endif
