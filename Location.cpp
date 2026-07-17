@@ -96,6 +96,7 @@ Item Location::searchForItem()
     if (items.size() > 0)
     {
         Item found = items.back();
+        //Removes the last elemnt from the vector
         items.pop_back();
 
         return found;

@@ -2,7 +2,6 @@
 #define CHARACTER_H
 
 #include <string>
-
 using namespace std;
 
 class Character
@@ -14,7 +13,9 @@ private:
     int friendship;
 
 public:
+
     Character();
+
     Character(string n, int h, string l);
 
     void setName(string n);
@@ -25,6 +26,7 @@ public:
 
     void setHealth(int h);
     int getHealth();
+
     int getFriendship();
 
     void increaseFriendship(int amount);

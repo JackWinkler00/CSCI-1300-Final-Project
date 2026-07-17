@@ -6,15 +6,16 @@ This game is about bringing the One Ring to Mordor to destroy it. The player wil
 
 ## Goal
 
-TBA
+Make it to Mordor and destroy the one ring, to do this you must complete the "Fellowship Quest".
 
 ## How to compile and run
 
-TBA
+g++ -std=c++17 -Wall -Werror -Wpedantic *.cpp -o lotr
+./lotr
 
 ## How to play
 
-TBA
+Navigate the menu and ask characters for clues. The ultimate goal of the game is to make it to Mordor and destroy the one ring, to do this you must complete the "Fellowship Quest".
 
 ## Classes
 

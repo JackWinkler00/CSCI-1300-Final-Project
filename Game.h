@@ -3,6 +3,7 @@
 
 #include "Player.h"
 #include "Location.h"
+#include "Bundle.h"
 #include <vector>
 
 using namespace std;
@@ -15,6 +16,16 @@ private:
 
     vector<Character> characters;
     vector<Location> locations;
+
+    Bundle bundle;
+
+    int corruptionLimit = 50;
+
+    //Checks if the player has talked to Gandalf to unlock the eye
+    bool eyeUnlocked;
+
+    //Checks if the player has recieved the ring from Gollum
+    bool hasRing;
 
 public:
     Game();
@@ -42,6 +53,12 @@ public:
     void endTurn();
 
     void endGame();
+
+    void donateItem();
+
+    void checkCorruption();
+
+    void useEyeShortcut();
 };
 
 #endif

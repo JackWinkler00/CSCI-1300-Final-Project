@@ -41,6 +41,8 @@ public:
     void increaseCorruption(int amount);
 
     void talk();
+
+    void removeItem(string itemName);
 };
 
 #endif

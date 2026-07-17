@@ -91,6 +91,17 @@ bool Player::hasItem(string itemName)
     return false;
 }
 
+void Player::removeItem(string itemName)
+{
+    for (int i = 0; i < inventory.size(); i++)
+    {
+        if (inventory[i].getName() == itemName)
+        {
+            inventory.erase(inventory.begin() + i);
+            return;
+        }
+    }
+}
 
 int Player::getStamina()
 {
